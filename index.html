@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PM AJAY Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="form-card">
+      <div class="header">
+        <img src="LeftLogo.png" alt="Left Logo" class="logo" />
+
+        <div class="title-block">
+          <h1>उत्तराखण्ड बहुउद्देशीय वित्त एवं विकास निगम लिमिटेड</h1>
+          <h2>प्रधानमंत्री अनुसूचित जाति अभ्युदय योजना (PM AJAY)</h2>
+          <p>आजीविका सृजन (ऋण) हेतु आवेदन पत्र</p>
+        </div>
+
+        <img src="RightLogo.png" alt="Right Logo" class="logo" />
+      </div>
+
+      <form id="applicationForm" novalidate>
+        <div class="row two-col bank-row">
+          <div class="field-group">
+            <label for="bank_name">बैंक का नाम -</label>
+            <input type="text" id="bank_name" name="bank_name" required />
+          </div>
+
+          <div class="field-group">
+            <label for="branch">शाखा -</label>
+            <input type="text" id="branch" name="branch" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="applicant_name">1. आवेदक का पूरा नाम -</label>
+            <input type="text" id="applicant_name" name="applicant_name" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="father_husband_name">2. पिता / पति का नाम -</label>
+            <input type="text" id="father_husband_name" name="father_husband_name" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="mother_name">3. माता का नाम -</label>
+            <input type="text" id="mother_name" name="mother_name" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="dob">4. जन्म तिथि -</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+        </div>
+
+        <div class="section-label">5. आवेदक का पूर्ण स्थायी पता (ग्रामीण / शहरी) -</div>
+
+        <div class="row two-col">
+          <div class="field-group">
+            <label for="gram_panchayat">ग्राम पंचायत -</label>
+            <input type="text" id="gram_panchayat" name="gram_panchayat"  />
+          </div>
+
+          <div class="field-group">
+            <label for="gram">ग्राम -</label>
+            <input type="text" id="gram" name="gram" />
+          </div>
+        </div>
+
+        <div class="row two-col">
+          <div class="field-group">
+            <label for="town_city">कस्बे / शहर का नाम -</label>
+            <input type="text" id="town_city" name="town_city" />
+          </div>
+
+          <div class="field-group">
+            <label for="ward_no">वार्ड नं -</label>
+            <input type="text" id="ward_no" name="ward_no" />
+          </div>
+        </div>
+
+        <div class="row two-col">
+          <div class="field-group">
+            <label for="post">पोस्ट -</label>
+            <input type="text" id="post" name="post" required />
+          </div>
+
+          <div class="field-group">
+            <label for="tehsil">तहसील -</label>
+            <input type="text" id="tehsil" name="tehsil" required />
+          </div>
+        </div>
+
+        <div class="row two-col">
+          <div class="field-group">
+            <label for="block">विकासखण्ड -</label>
+            <input type="text" id="block" name="block" required />
+          </div>
+
+          <div class="field-group">
+            <label for="district_name">जनपद -</label>
+            <input type="text" id="district_name" name="district_name" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="pincode">पिन कोड -</label>
+            <input type="text" id="pincode" name="pincode" maxlength="6" pattern="[0-9]{6}" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="annual_income">6. आवेदक की वार्षिक आय <span class="small-text">(सक्षम अधिकारी द्वारा प्रदत्त)</span> -</label>
+            <input type="text" id="annual_income" name="annual_income" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="adhaar_no">7. आवेदक का आधार नम्बर -</label>
+            <input type="text" id="adhaar_no" name="adhaar_no" maxlength="12" pattern="[0-9]{12}" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="mobile">8. आवेदक का मोबाइल नम्बर <span class="small-text">(आधार लिंक)</span> -</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" pattern="[0-9]{10}" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="voter_id">9. वोटर आईडी -</label>
+            <input type="text" id="voter_id" name="voter_id" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="gender">10. लिंग -</label>
+            <select id="gender" name="gender" required>
+              <option value="">चुनें</option>
+              <option value="पुरुष">पुरुष</option>
+              <option value="महिला">महिला</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-label">11. सामाजिक समूह -</div>
+
+        <div class="row two-col">
+          <div class="field-group">
+            <label for="caste">जाति -</label>
+            <input type="text" id="caste" name="caste" required />
+          </div>
+
+          <div class="field-group">
+            <label for="subcaste">उपजाति -</label>
+            <input type="text" id="subcaste" name="subcaste" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="caste_certificate_no">जाति प्रमाण पत्र की संख्या -</label>
+            <input type="text" id="caste_certificate_no" name="caste_certificate_no" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="education">12. शैक्षिक योग्यता -</label>
+            <input type="text" id="education" name="education" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="occupation">13. व्यवसाय -</label>
+            <input type="text" id="occupation" name="occupation" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="disability">14. शारीरिक विकलांगता -</label>
+            <select id="disability" name="disability" required>
+              <option value="">चुनें</option>
+              <option value="हाँ">हाँ</option>
+              <option value="नहीं">नहीं</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-label">15. परियोजना का विवरण -</div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="project_name">(क) परियोजना का नाम -</label>
+            <input type="text" id="project_name" name="project_name" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="project_coste">(ख) परियोजना की लागत -</label>
+            <input type="number" id="project_coste" name="project_coste" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-group full">
+            <label for="project_place">(ग) परियोजना का स्थान -</label>
+            <input type="text" id="project_place" name="project_place" required />
+          </div>
+        </div>
+
+        <div class="declaration-title">--घोषणा--</div>
+        <p class="declaration-text">
+          यह प्रमाणित किया जाता है कि मेरे द्वारा उपर्युक्त दी गई समस्त जानकारी पूर्णतः सत्य एवं तथ्यों पर आधारित है।
+          मैंने इससे पूर्व निगम द्वारा संचालित किसी भी योजना के अंतर्गत कोई वित्तीय सहायता अथवा अनुदान राशि प्राप्त नहीं की है।
+          यदि दी गई किसी भी जानकारी को असत्य पाया जाता है, तो उसके लिए मैं स्वयं पूर्ण रूप से उत्तरदायी रहूंगा/रहूंगी।
+        </p>
+
+        <div id="messageBox" class="message-box"></div>
+
+        <div class="submit-btn">
+          <button type="submit">Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
